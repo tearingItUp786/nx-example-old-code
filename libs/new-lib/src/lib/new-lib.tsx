@@ -7,7 +7,10 @@ export function NewLib(props: NewLibProps) {
     return (
         <div className={styles['container']}>
             <h1>Welcome to NewLib!</h1>
-            <h2>I'm inside of the nx libs</h2>
+            <h2>
+                I'm inside of the nx libs and I'm imported into the legacy
+                codebase
+            </h2>
         </div>
     )
 }
