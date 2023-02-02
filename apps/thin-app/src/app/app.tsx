@@ -1,16 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.css'
-import NxWelcome from './nx-welcome'
+import OldApp from 'src/app'
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import OldApp from '../../../../src/app'
 import { Route, Routes, Link } from 'react-router-dom'
 
 export function App() {
     return (
         <>
-            <NxWelcome title="thin-app" />
             <div />
 
             {/* START: routes */}
@@ -30,7 +26,16 @@ export function App() {
                 </ul>
             </div>
             <Routes>
-                <Route path="/" element={<OldApp />} />
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <h1>Below this the old app is being rendered</h1>
+                            <h2>Welcome thin-app</h2>
+                            <OldApp />
+                        </>
+                    }
+                />
                 <Route
                     path="/page-2"
                     element={

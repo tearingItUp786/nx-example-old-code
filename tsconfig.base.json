@@ -1,8 +1,13 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
+        "baseUrl": ".",
         "moduleResolution": "Node",
         "target": "es5",
-        "module": "es6"
+        "module": "es6",
+        "paths": {
+            "new-lib": ["libs/new-lib/src/index.ts"],
+            "src/*": ["src/*"]
+        }
     }
 }

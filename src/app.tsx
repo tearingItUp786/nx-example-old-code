@@ -1,11 +1,12 @@
-import styles from './app.css'
+import React from 'react'
+import styles from './app.module.css'
 import Yolo from './client/yolo'
 
 function App() {
     console.log('wtf', styles)
     return (
         <div className={styles?.container}>
-            {'react setup from scratch without cra testing ts'}
+            This is the old app
             <Yolo />
         </div>
     )
