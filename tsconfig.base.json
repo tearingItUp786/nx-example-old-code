@@ -1,13 +1,23 @@
 {
-    "compileOnSave": false,
-    "compilerOptions": {
-        "baseUrl": ".",
-        "moduleResolution": "Node",
-        "target": "es5",
-        "module": "es6",
-        "paths": {
-            "new-lib": ["libs/new-lib/src/index.ts"],
-            "src/*": ["src/*"]
-        }
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "Node",
+    "target": "es5",
+    "module": "es6",
+    "paths": {
+      "new-lib": [
+        "libs/new-lib/src/index.ts"
+      ],
+      "src/*": [
+        "src/*"
+      ]
     }
+  },
+  "exclude": [
+    "node_modules",
+    "cypress",
+    "cypress.config.ts",
+    "**/*.spec.tsx"
+  ]
 }
