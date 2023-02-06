@@ -22,6 +22,5 @@ export function NewLib({ count, setCount }: NewLibProps) {
       </button>
     </div>
   )
-}
 
 export default NewLib
