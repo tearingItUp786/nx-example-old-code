@@ -7,7 +7,7 @@
         "start": "webpack-dev-server --open --mode development --hot",
         "build": "webpack --mode production",
         "test": "jest --passWithNoTests",
-        "serve": "webpack --mode development --hot"
+        "serve": "webpack --mode development"
     },
     "author": "",
     "license": "ISC",
