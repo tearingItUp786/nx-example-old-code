@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react'
 
-import NewLib from './new-lib'
+import DecreaseCounter from './decrease-counter'
 
-describe('NewLib', () => {
+describe('DecreaseCounter', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
-      <NewLib count={0} setCount={jest.fn()} />
+      <DecreaseCounter onDecreaseCount={jest.fn()} />
     )
     expect(baseElement).toBeTruthy()
   })
