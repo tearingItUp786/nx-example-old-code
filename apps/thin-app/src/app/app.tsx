@@ -1,12 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.css'
 import OldApp from 'src/app'
-
+// @ts-ignore
+import chuckSrc from 'chuck-norris-fact-element/chuck-norris-fact.js'
 import { Route, Routes, Link } from 'react-router-dom'
 
 export function App() {
     return (
         <>
+            <script type="module" src={chuckSrc}></script>
             <div />
 
             {/* START: routes */}
@@ -43,6 +45,11 @@ export function App() {
                             <Link to="/">
                                 Click here to go back to root page.
                             </Link>
+                            <br />
+                            <br />
+                            {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                            {/* @ts-ignore */}
+                            <chuck-norris-fact></chuck-norris-fact>
                         </div>
                     }
                 />

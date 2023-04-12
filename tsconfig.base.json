@@ -1,20 +1,15 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "baseUrl": ".",
-    "moduleResolution": "Node",
-    "target": "es5",
-    "module": "es6",
-    "paths": {
-      "new-lib": [
-        "libs/new-lib/src/index.ts"
-      ],
-      "src/*": [
-        "src/*"
-      ]
-    }
-  },
-  "exclude": [
-    "**/*.spec.tsx"
-  ]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "moduleResolution": "Node",
+        "target": "es5",
+        "module": "es6",
+        "paths": {
+            "decrease-counter": ["libs/decrease-counter/src/index.ts"],
+            "new-lib": ["libs/new-lib/src/index.ts"],
+            "src/*": ["src/*"]
+        }
+    },
+    "exclude": ["**/*.spec.tsx"]
 }
