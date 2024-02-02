@@ -7,7 +7,9 @@
         "module": "es6",
         "paths": {
             "decrease-counter": ["libs/decrease-counter/src/index.ts"],
+            "foobar": ["libs/foobar/src/index.ts"],
             "new-lib": ["libs/new-lib/src/index.ts"],
+            "otherthing": ["libs/otherthing/src/index.ts"],
             "src/*": ["src/*"]
         }
     },

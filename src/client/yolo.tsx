@@ -2,6 +2,7 @@ import { NewLib } from 'new-lib'
 import React from 'react'
 import styles from './yolo.module.css'
 import { DecreaseCounter } from 'libs/decrease-counter/src'
+import { Otherthing } from 'libs/otherthing/src'
 
 function Yolo() {
     const [count, setCount] = React.useState(0)
@@ -17,6 +18,7 @@ function Yolo() {
                     setCount((c) => c - 1)
                 }}
             />
+            <Otherthing />
         </div>
     )
 }
