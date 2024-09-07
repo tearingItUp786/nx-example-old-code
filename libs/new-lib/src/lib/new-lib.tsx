@@ -9,11 +9,11 @@ export interface NewLibProps {
 
 export function NewLib({ count, setCount }: NewLibProps) {
     return (
-        <div className={styles['container']}>
-            <h1>Welcome to NewLib!</h1>
+        <div className="box has-background-success	is-bordered">
             <h2>I'm inside of the nx libs</h2>
             <h3>The count is {count}</h3>
             <button
+                className="button is-rounded"
                 onClick={() => {
                     setCount((a: number) => a + 1)
                 }}
