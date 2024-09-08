@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server --open --mode development --hot --port 8001",
+        "start": "webpack-dev-server --open --mode development --hot --port 7860",
         "build": "webpack --mode production",
         "test": "jest --passWithNoTests",
         "serve": "webpack --mode development"
