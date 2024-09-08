@@ -11,7 +11,10 @@ export function NewLib({ count, setCount }: NewLibProps) {
     return (
         <div className="box has-background-success	is-bordered">
             <h2>Shiny New Component</h2>
-            <h3>The count is {count}</h3>
+            <h3>
+                <strong>count: </strong>
+                {count}
+            </h3>
             <button
                 className="button is-rounded"
                 onClick={() => {
