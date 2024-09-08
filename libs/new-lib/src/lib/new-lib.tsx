@@ -8,9 +8,11 @@ export interface NewLibProps {
 }
 
 export function NewLib({ count, setCount }: NewLibProps) {
+    const classToUse =
+        count > 10 ? 'has-background-danger-dark' : 'has-background-info-dark'
     return (
-        <div className="box has-background-success	is-bordered">
-            <h2>A Brand New Component</h2>
+        <div className={'box is-bordered ' + classToUse}>
+            <h2 className="">New Component</h2>
             <h3>
                 <strong>count: </strong>
                 {count}
