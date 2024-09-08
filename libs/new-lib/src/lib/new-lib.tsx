@@ -21,7 +21,7 @@ export function NewLib({ count, setCount }: NewLibProps) {
                     setCount((a: number) => a + 1)
                 }}
             >
-                Increase the count
+                ➕ count
             </button>
         </div>
     )
