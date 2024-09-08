@@ -10,7 +10,7 @@ export interface NewLibProps {
 export function NewLib({ count, setCount }: NewLibProps) {
     return (
         <div className="box has-background-success	is-bordered">
-            <h2>Shiny New Component</h2>
+            <h2>New Component</h2>
             <h3>
                 <strong>count: </strong>
                 {count}
