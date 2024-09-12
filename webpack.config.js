@@ -13,7 +13,7 @@ module.exports = {
     },
     devServer: {
         static: './dist',
-        disableHostCheck: true, // That solved it
+        allowedHosts: 'all',
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
